@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função do 2º Grau</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="assunto">
+            <H1 id="title">Função do segundo grau completa!</H1>
+            <p class="passos">
+                Para calcular uma função do segundo grau completa (ou equação quadrática completa), que é escrita na
+                forma
+                geral:
+                <br>
+                f(x) = ax^2 + bx + c <br>
+                onde 'a', 'b' e 'c' são constantes e 'a' não pode ser igual a zero, siga os passos abaixo:
+            </p>
+            <p class="passos">
+                Passo 1: Identifique os valores de 'a', 'b' e 'c' na equação fornecida.</p>
+            <p class="passos">
+                Passo 2: Calcule o discriminante (Δ) da equação quadrática. O discriminante é dado pela fórmula:
+                <br>
+                Δ = b^2 - 4ac
+            </p>
+            <p class="passos">
+                Passo 3: Verifique o valor do discriminante (Δ) para determinar a natureza das raízes da equação:
+                <br>
+                a) Se Δ > 0: A equação possui duas raízes reais e distintas.<br>
+                b) Se Δ = 0: A equação possui duas raízes reais e iguais.<br>
+                c) Se Δ < 0: A equação não possui raízes reais, ou seja, as raízes são complexas. </p>
+                    <p id="passos">
+                        Passo 4: Calcule as raízes da equação, se existirem, usando a fórmula geral das raízes:
+                        <br><br>
+                        x = (-b ± √Δ) / 2a
+                        <br><br>
+                        Para Δ > 0 (duas raízes reais e distintas):
+                        <br><br>
+                        Calcule o valor de x usando o sinal de mais (+) no numerador.<br>
+                        Calcule o valor de x usando o sinal de menos (-) no numerador.<br>
+                        Para Δ = 0 (duas raízes reais e iguais):<br>
+                        <br>
+                        Calcule o valor único de x usando o sinal de mais (+) ou menos (-), pois ambos darão o mesmo
+                        resultado.<br><br>
+                        Para Δ < 0 (raízes complexas):<br>
+                            Neste caso, as raízes são complexas e não podem ser expressas em termos reais. O valor
+                            numérico
+                            de √Δ será imaginário.
+                    </p>
+                    <p class="passos">
+                        Passo 5: Se desejado, você pode encontrar o vértice da parábola associada à função quadrática
+                        usando
+                        a fórmula:<br><br>
+                        x_vértice = -b / 2a<br>
+                        y_vértice = f(x_vértice) = f(-b / 2a)<br><br>
+                        Isso lhe dará as coordenadas do vértice (x_vértice, y_vértice) da parábola.<br>
+                        Lembre-se de que, ao resolver problemas ou exercícios envolvendo funções do segundo grau,
+                        é importante prestar atenção à interpretação do contexto e às unidades das grandezas
+                        envolvidas.<br>
+                        Se necessário, arredonde os resultados para a precisão apropriada.
+                    </p>
+        </div>
+        <div id="calculadora">
+            <h2>CALCULAR DE FUNÇÃO DO 2º GRAU COMPLETA:</h2>
+            <label class="lnum">Coloque os valores A:</label>
+            <input type="number" id="numa" class="number">
+            <label class="lnum">B:</label>
+            <input type="number" id="numb" class="number">
+            <label class="lnum">C:</label>
+            <input type="number" id="numc" class="number">
+            <br>
+            <input type="submit" value="Calcular" id="calc" onclick="calcular()">
+            <h3 id="funcao" class="vis">Função completa: </h3>
+            <h3 id="disc" class="vis">O Discriminante(Δ): </h3>
+            <h3 id="rum" class="vis">A Primeira raiz da função é: </h3>
+            <h3 id="rdois" class="vis">A Segunda raiz da função é: </h3>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
